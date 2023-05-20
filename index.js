@@ -35,7 +35,7 @@ results.forEach((result) => {
         ruleId: result.code,
         level: 'error',
         messageText: result.message,
-        filreUri: result.source,
+        fileUri: result.source,
     }
 
     sarifResultInit.startLine = result.range.start.line
