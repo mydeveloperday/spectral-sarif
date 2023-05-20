@@ -1,15 +1,27 @@
 {
-  "name": "spectral-sarif",
-  "version": "0.0.1",
-  "description": "A tool for converting spectral json output to sarif format",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "node-sarif-builder": "^2.0.3",
-    "yargs": "^17.7.2"
-  }
+    "name": "spectral-sarif",
+    "version": "0.0.1",
+    "description": "A tool for converting spectral json output to sarif format",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "OpenAPI",
+        "Spectral",
+        "Sarif",
+        "SonarQube"
+    ],
+    "homepage": "https://github.com/mydeveloperday/spectral-sarif",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mydeveloperday/spectral-sarif"
+    },
+    "bugs": "https://github.com/mydeveloperday/spectral-sarif/issues",
+    "author": "MyDeveloperDay <mydeveloperday@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "node-sarif-builder": "^2.0.3",
+        "yargs": "^17.7.2"
+    }
 }
