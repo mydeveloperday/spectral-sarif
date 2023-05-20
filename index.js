@@ -14,6 +14,7 @@ function minVal(val)
   return 1;
 }
 
+// TODO add a relative directory option
 const argv = yargs
     .option('o', {
         alias: 'output',
@@ -44,12 +45,13 @@ results.forEach((result) => {
         ruleId: result.code,
         level: 'error',
         messageText: result.message,
+        // TODO needs to be relative to the sonar source directory
         fileUri: result.source,
     };
 
-    sarifResultInit.startLine = minVal(result.range.start.line);
+    sarifResultInit.startLine = minVal(result.range.start.line)+1;
     sarifResultInit.startColumn = minVal(result.range.start.character);
-    sarifResultInit.endLine = minVal(result.range.end.line);
+    sarifResultInit.endLine = minVal(result.range.end.line)+1;
     sarifResultInit.endColumn = minVal(result.range.end.character);
 
     sarifResultBuilder.initSimple(sarifResultInit)
