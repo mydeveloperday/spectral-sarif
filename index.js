@@ -13,6 +13,7 @@ const argv = yargs
         type: 'string',
         demandOption: false,
     })
+    .demandCommand(1)
     .usage('Usage: $0 [options] <filename>').argv
 
 const filename = argv._[0]

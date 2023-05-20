@@ -6,6 +6,7 @@
       "tool": {
         "driver": {
           "name": "spectral-sarif",
+          "rules": [],
           "version": "0.0.1"
         }
       },
@@ -20,7 +21,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -43,7 +44,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -66,7 +67,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -89,7 +90,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -112,7 +113,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -135,7 +136,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -158,7 +159,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -181,7 +182,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./openapi.yaml",
+                  "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml",
                   "index": 0
                 },
                 "region": {
@@ -199,7 +200,7 @@
         {
           "sourceLanguage": "YAML",
           "location": {
-            "uri": "./openapi.yaml"
+            "uri": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
           }
         }
       ]
