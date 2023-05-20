@@ -11,6 +11,17 @@ spectral -f json -o out.json lint openapi.yaml
 
 Then run spectral-sarif -o out.sarif out.json
 
-spectral-sarif -o out.satif out.json
+spectral-sarif -o out.sarif out.json
+
+Now running sonar-scanner with the following properties
+
+sonar.host.url=<your sonarqube url>
+sonar.projectKey=spectral-sarif
+sonar.sources=.
+sonar.login=<your token>
+sonar.sarifReportPaths=./out.sarif
+
+
+NOTE: SonarCloud does not support sarifReportPaths (in the same way as SonarQube does)
 
 
