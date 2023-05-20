@@ -1,0 +1,172 @@
+[
+	{
+		"code": "info-contact",
+		"path": [
+			"info"
+		],
+		"message": "Info object must have \"contact\" object.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 1,
+				"character": 5
+			},
+			"end": {
+				"line": 5,
+				"character": 13
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "info-description",
+		"path": [
+			"info"
+		],
+		"message": "Info \"description\" must be present and non-empty string.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 1,
+				"character": 5
+			},
+			"end": {
+				"line": 5,
+				"character": 13
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "operation-description",
+		"path": [
+			"paths",
+			"/pets",
+			"get"
+		],
+		"message": "Operation \"description\" must be present and non-empty string.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 16,
+				"character": 8
+			},
+			"end": {
+				"line": 40,
+				"character": 39
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "operation-tag-defined",
+		"path": [
+			"paths",
+			"/pets",
+			"get",
+			"tags",
+			"0"
+		],
+		"message": "Operation tags must be defined in global tags.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 20,
+				"character": 10
+			},
+			"end": {
+				"line": 20,
+				"character": 14
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "operation-description",
+		"path": [
+			"paths",
+			"/pets",
+			"post"
+		],
+		"message": "Operation \"description\" must be present and non-empty string.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 41,
+				"character": 9
+			},
+			"end": {
+				"line": 52,
+				"character": 39
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "operation-tag-defined",
+		"path": [
+			"paths",
+			"/pets",
+			"post",
+			"tags",
+			"0"
+		],
+		"message": "Operation tags must be defined in global tags.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 45,
+				"character": 10
+			},
+			"end": {
+				"line": 45,
+				"character": 14
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "operation-description",
+		"path": [
+			"paths",
+			"/pets/{petId}",
+			"get"
+		],
+		"message": "Operation \"description\" must be present and non-empty string.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 54,
+				"character": 8
+			},
+			"end": {
+				"line": 73,
+				"character": 39
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	},
+	{
+		"code": "operation-tag-defined",
+		"path": [
+			"paths",
+			"/pets/{petId}",
+			"get",
+			"tags",
+			"0"
+		],
+		"message": "Operation tags must be defined in global tags.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 58,
+				"character": 10
+			},
+			"end": {
+				"line": 58,
+				"character": 14
+			}
+		},
+		"source": "c:/cygwin64/buildareas/spectral-sarif-exporter/openapi.yaml"
+	}
+]
