@@ -1,0 +1,170 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "spectral-sarif",
+          "rules": [],
+          "version": "0.0.1"
+        }
+      },
+      "results": [
+        {
+          "level": "error",
+          "message": {
+            "text": "Info object must have \"contact\" object."
+          },
+          "ruleId": "info-contact",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 5,
+                  "endLine": 5,
+                  "endColumn": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Info \"description\" must be present and non-empty string."
+          },
+          "ruleId": "info-description",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 5,
+                  "endLine": 5,
+                  "endColumn": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Operation \"description\" must be present and non-empty string."
+          },
+          "ruleId": "operation-description",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 8,
+                  "endLine": 40,
+                  "endColumn": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Operation tags must be defined in global tags."
+          },
+          "ruleId": "operation-tag-defined",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 10,
+                  "endLine": 20,
+                  "endColumn": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Operation \"description\" must be present and non-empty string."
+          },
+          "ruleId": "operation-description",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 9,
+                  "endLine": 52,
+                  "endColumn": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Operation tags must be defined in global tags."
+          },
+          "ruleId": "operation-tag-defined",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 10,
+                  "endLine": 45,
+                  "endColumn": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Operation \"description\" must be present and non-empty string."
+          },
+          "ruleId": "operation-description",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 8,
+                  "endLine": 73,
+                  "endColumn": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Operation tags must be defined in global tags."
+          },
+          "ruleId": "operation-tag-defined",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 10,
+                  "endLine": 58,
+                  "endColumn": 14
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "artifacts": []
+    }
+  ]
+}
