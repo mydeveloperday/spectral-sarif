@@ -36,7 +36,7 @@ const sarifBuilder = new SarifBuilder();
 // SARIF Run builder
 const sarifRunBuilder = new SarifRunBuilder().initSimple({
     toolDriverName: 'spectral-sarif',
-    toolDriverVersion: '0.0.7',
+    toolDriverVersion: '0.0.8',
 });
 
 results.forEach((result) => {

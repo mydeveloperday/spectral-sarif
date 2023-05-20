@@ -1,11 +1,13 @@
 {
     "name": "spectral-sarif",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "A tool for converting spectral json output to sarif format",
     "main": "index.js",
     "scripts": {
         "test": "node index.js -o test.sarif out.json",
-        "build": "node index.js --usage"
+        "build": "node index.js --usage",
+        "lint": "eslint .  --ext .js",
+        "lint-fix": "eslint --fix .  --ext .js"
     },
     "keywords": [
         "OpenAPI",
@@ -24,5 +26,9 @@
     "dependencies": {
         "node-sarif-builder": "^2.0.3",
         "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.41.0",
+        "eslint-plugin-jest": "^27.2.1"
     }
 }
