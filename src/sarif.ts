@@ -17,7 +17,7 @@ export function minVal(val: number) {
 
 export function relative(rootdir: string, fullpath: string) {
     if (fullpath.startsWith(rootdir)) {
-        return fullpath.substring(rootdir.length+1);
+        return fullpath.substring(rootdir.length);
     }
     return fullpath;
 }

@@ -9,7 +9,7 @@ test('check minVal', () => {
 });
 
 test('check relative', () => {
-    expect(relative("c:/cygwin64/source",'c:/cygwin64/source/spectral-sarif/openapi.yaml')).toEqual('spectral-sarif/openapi.yaml');
+    expect(relative("c:/cygwin64/source/",'c:/cygwin64/source/spectral-sarif/openapi.yaml')).toEqual('spectral-sarif/openapi.yaml');    
 });
 
 test('check export', () => {
