@@ -5,7 +5,8 @@
     "main": "dist/main.js",
     "scripts": {
         "build": "tsc",
-        "lint": "eslint .  --ext .ts -f @microsoft/eslint-formatter-sarif -o eslint.sarif",
+        "lint:sarif": "eslint .  --ext .ts -f @microsoft/eslint-formatter-sarif -o eslint.sarif",
+        "lint": "eslint .",
         "lint-fix": "eslint --fix .  --ext .js",
         "sonar": "sonar-scanner -X",
         "test": "jest --coverage"
