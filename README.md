@@ -1,3 +1,6 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=spectral-sarif&metric=coverage)](https://sonarcloud.io/summary/new_code?id=spectral-sarif)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=spectral-sarif&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=spectral-sarif)
+
 Spectral-sarif is a Node based tool for transforming spectral json output to sarif format.
 
 The purpose is for importing the spectral output into static analysis tools such as SonarQube for the tracking of spectral issues.
