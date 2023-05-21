@@ -15,6 +15,13 @@ export function minVal(val: number) {
     return 1;
 }
 
+export function relative(rootdir: string, fullpath: string) {
+    if (fullpath.startsWith(rootdir)) {
+        return fullpath.substring(rootdir.length+1);
+    }
+    return fullpath;
+}
+
 export function main() {
     // TODO add a relative directory option
     const argv = yargs
@@ -24,12 +31,23 @@ export function main() {
             type: 'string',
             demandOption: false,
         })
+        .option('r', {
+            alias: 'root',
+            describe: 'Root directory',
+            type: 'string',
+            demandOption: false,
+        })
         .demandCommand(1)
         .usage('Usage: $0 [options] <filename>').argv
-
+    
     const filename = argv._[0]
     const outputfilename = argv.output
+    const rootdir = argv.root;
 
+    exportSarif(filename, outputfilename, rootdir);
+}
+
+export function exportSarif(filename:string, outputfilename:string,rootdir:string) {
     const results = JSON.parse(fs.readFileSync(filename, 'utf8'))
 
     // SARIF builder
@@ -48,7 +66,7 @@ export function main() {
             level: 'error',
             messageText: result.message,
             // TODO needs to be relative to the sonar source directory
-            fileUri: result.source,   
+            fileUri: relative(rootdir,result.source),   
             
             startLine: 0,
             startColumn: 0,
