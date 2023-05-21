@@ -1,4 +1,4 @@
-import { SarifResultOptions } from "node-sarif-builder/dist/types/node-sarif-builder"
+
 
 const fs = require('fs')
 const {
@@ -23,7 +23,6 @@ export function relative(rootdir: string, fullpath: string) {
 }
 
 export function main() {
-    // TODO add a relative directory option
     const argv = yargs
         .option('o', {
             alias: 'output',
@@ -65,7 +64,6 @@ export function exportSarif(filename:string, outputfilename:string,rootdir:strin
             ruleId: result.code,
             level: 'error',
             messageText: result.message,
-            // TODO needs to be relative to the sonar source directory
             fileUri: relative(rootdir,result.source),   
             
             startLine: 0,
