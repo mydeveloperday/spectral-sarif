@@ -1,6 +1,6 @@
 {
     "name": "spectral-sarif",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "A tool for converting spectral json output to sarif format",
     "main": "dist/main.js",
     "scripts": {
