@@ -38,12 +38,8 @@ export function main() {
         })
         .demandCommand(1)
         .usage('Usage: $0 [options] <filename>').argv
-    
-    const filename = argv._[0]
-    const outputfilename = argv.output
-    const rootdir = argv.root;
 
-    exportSarif(filename, outputfilename, rootdir);
+    exportSarif(argv._[0], argv.output, argv.root);
 }
 
 export function exportSarif(filename:string, outputfilename:string,rootdir:string) {

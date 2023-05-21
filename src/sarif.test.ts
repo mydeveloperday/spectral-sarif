@@ -19,3 +19,8 @@ test('check export', () => {
     
     const results = JSON.parse(readFileSync('testout.json', 'utf8'))
 });
+
+test('check export to console', () => {
+    expect(existsSync('out.json')).toEqual(true);
+    exportSarif('out.json', '', 'c:/cygwin64/source');  
+});
