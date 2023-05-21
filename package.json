@@ -1,11 +1,11 @@
 {
     "name": "spectral-sarif",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "A tool for converting spectral json output to sarif format",
-    "main": "index.js",
+    "main": "dist/main.js",
     "scripts": {
-        "test": "node index.js -o test.sarif out.json",
-        "build": "node index.js --usage",
+        "test": "jest",
+        "build": "tsc",
         "lint": "eslint .  --ext .js",
         "lint-fix": "eslint --fix .  --ext .js"
     },
@@ -28,7 +28,13 @@
         "yargs": "^17.7.2"
     },
     "devDependencies": {
+        "@babel/preset-typescript": "^7.21.5",
+        "@types/jest": "^29.5.1",
         "eslint": "^8.41.0",
-        "eslint-plugin-jest": "^27.2.1"
+        "eslint-plugin-jest": "^27.2.1",
+        "jest": "^29.5.0",
+        "ts-jest": "^29.1.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
     }
 }
