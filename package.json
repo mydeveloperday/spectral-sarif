@@ -1,8 +1,11 @@
 {
     "name": "spectral-sarif",
-    "version": "0.0.11",
+    "version": "0.0.13",
     "description": "A tool for converting spectral json output to sarif format",
     "main": "dist/main.js",
+    "bin": {
+        "spectral-sarif": "./spectral-sarif"
+    },
     "scripts": {
         "build": "tsc",
         "lint:sarif": "eslint .  --ext .ts -f @microsoft/eslint-formatter-sarif -o eslint.sarif",
