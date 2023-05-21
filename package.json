@@ -4,11 +4,11 @@
     "description": "A tool for converting spectral json output to sarif format",
     "main": "dist/main.js",
     "scripts": {
-        "test": "jest",
         "build": "tsc",
-        "lint": "eslint .  --ext .js",
+        "lint": "eslint .  --ext .ts -f @microsoft/eslint-formatter-sarif -o eslint.sarif",
         "lint-fix": "eslint --fix .  --ext .js",
-        "sonar": "sonar-scanner -X"
+        "sonar": "sonar-scanner -X",
+        "test": "jest --coverage"
     },
     "keywords": [
         "OpenAPI",
@@ -30,10 +30,12 @@
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.21.5",
+        "@microsoft/eslint-formatter-sarif": "^3.0.0",
         "@types/jest": "^29.5.1",
         "eslint": "^8.41.0",
         "eslint-plugin-jest": "^27.2.1",
         "jest": "^29.5.0",
+        "nyc": "^15.1.0",
         "ts-jest": "^29.1.0",
         "ts-node": "^10.9.1",
         "typescript": "^5.0.4"
