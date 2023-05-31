@@ -8,6 +8,8 @@ const {
 } = require('node-sarif-builder')
 const yargs = require('yargs')
 
+const pjson = require('./package.json');
+
 export function minVal(val: number) {
     if (val) {
         return val;
@@ -51,7 +53,7 @@ export function exportSarif(filename:string, outputfilename:string,rootdir:strin
     // SARIF Run builder
     const sarifRunBuilder = new SarifRunBuilder().initSimple({
         toolDriverName: 'spectral-sarif',
-        toolDriverVersion: '0.0.8',
+        toolDriverVersion: pjson.version,
     })
 
     results.forEach((result) => {
