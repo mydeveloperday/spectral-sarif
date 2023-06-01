@@ -16,8 +16,10 @@ export function minVal(val: number) {
 }
 
 export function relative(rootdir: string, fullpath: string) {
-    if (fullpath.toLowerCase().startsWith(rootdir.toLowerCase())) {
-        return fullpath.substring(rootdir.length);
+    if (rootdir) {
+        if (fullpath.toLowerCase().startsWith(rootdir.toLowerCase())) {
+            return fullpath.substring(rootdir.length);
+        }
     }
     return fullpath;
 }
@@ -51,7 +53,7 @@ export function exportSarif(filename:string, outputfilename:string,rootdir:strin
     // SARIF Run builder
     const sarifRunBuilder = new SarifRunBuilder().initSimple({
         toolDriverName: 'spectral-sarif',
-        toolDriverVersion: '0.0.8',
+        toolDriverVersion: '0.0.17',
     })
 
     results.forEach((result) => {
